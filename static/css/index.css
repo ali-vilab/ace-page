@@ -89,6 +89,14 @@ body {
   /*color: #4286f4;*/
 }
 
+.chatbot-video {
+    position: relative;
+    width: 80%;
+    margin-left: 10%;
+    overflow: hidden;
+    /*padding: 20px;*/
+}
+
 .publication-video {
     position: relative;
     width: 100%;
@@ -112,12 +120,14 @@ body {
 
 .results-carousel {
   overflow: hidden;
+  width: 80%;
+  margin-left: 10%;
 }
 
 .results-carousel .item {
-  margin: 5px;
+  margin: 0px;
   overflow: hidden;
-  padding: 20px;
+  /*padding: 20px;*/
   font-size: 0;
 }
 
@@ -133,5 +143,10 @@ body {
   font-size: smaller;
 }
 
+.title_icon {
+    /*width: 1em;         !* 使图片宽度与字体大小一致 *!*/
+    height: 0.81em;        /* 使图片高度与字体大小一致 */
+    margin-right: 0px;  /* 图片与标题之间的间距 */
+}
 
 
