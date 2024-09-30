@@ -9,9 +9,9 @@
   <meta property="og:description" content="All-round Creator and Editor Following Instructions via Diffusion Transformer"/>
   <meta property="og:url" content=""/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
+<!--  <meta property="og:image" content="static/image/your_banner_image.png" />-->
+<!--  <meta property="og:image:width" content="1200"/>-->
+<!--  <meta property="og:image:height" content="630"/>-->
 
 
 <!--  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">-->
@@ -46,14 +46,14 @@
 </head>
 <body>
 
-
+<!--TODO：发布时间预告-->
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <img src="static/images/slogan_v2.gif" alt="slogan_v1"/>
-            <h1 class="title is-1 publication-title">ACE: All-round Creator and Editor Following Instructions via Diffusion Transformer</h1>
+            <h1 class="title is-2 publication-title">
+              <img src="static/images/icon.png" class="title_icon">: All-round Creator and Editor Following Instructions via Diffusion Transformer</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -66,19 +66,28 @@
                 <a href="" target="_blank">Jingfeng Zhang</a><sup>*</sup>,</span>
               <span class="author-block">
                 <a href="" target="_blank">Chaojie Mao</a><sup>*†</sup>,</span>
+            </div>
+            <div class="is-size-5 publication-authors">
               <span class="author-block">
                 <a href="" target="_blank">Chenwei Xie</a>,</span>
               <span class="author-block">
                 <a href="" target="_blank">Yu Liu</a>,</span>
               <span class="author-block">
                 <a href="" target="_blank">Jingren Zhou</a>,</span>
-                  </div>
+            </div>
 
                   <div class="is-size-5 publication-authors">
                     <span class="author-block">Wanx Team, Alibaba Group</span>
                     <span class="eql-cntrb"><small><br>
-                      <sup>*</sup>Indicates Equal Contribution. Order is determined by random dice rolling.
-                      <sup>†</sup> Indicates Project leader.</small></span>
+                      <sup>*</sup> Equal Contribution. Order is determined by random dice rolling.
+                      <sup>†</sup> Project leader.</small></span>
+                  </div>
+                  <div class="is-size-5 publication-authors">
+                    <span class="eql-cntrb"><small>
+                      <b>Acknowledgments:</b> Haiming Zhao, Yuntao
+                    Hong, You Wu, Jixuan Chen, Yuwei Wang, and Sheng Yao for their data contributions, and Lianghua
+                    Huang, Kai Zhu, and Yutong Feng for their discussions, suggestions, and the sharing of resources.
+                    </small></span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -136,27 +145,27 @@
 
 
 <!-- Teaser video-->
-<section class="hero teaser">
+<section class="hero teaser is-light">
   <div class="container is-max-desktop">
     <div class="hero-body">
-<!--      <img src="static/images/best_v1.gif" alt="teaser_img"/>-->
+      <img src="static/images/slogan_v2.gif" alt="slogan_v1"/>
       <video poster="" id="tree" autoplay controls muted loop height="100%">
         <!-- Your video here -->
-        <source src="static/videos/teaser_final.mp4"
+        <source src="static/videos/teaser_final.webm"
         type="video/mp4">
       </video>
-      <h2 class="subtitle has-text-centered">
-        Multi-turn image editing results of ACE. ACE supports a wide range of image editing
-        and generation tasks through natural language instructions, allowing complex editing requests to be
-        easily accomplished through multi-turn interactions.
-      </h2>
+<!--      <h2 class="subtitle has-text-centered">-->
+<!--        Multi-turn image editing results of ACE. ACE supports a wide range of image editing-->
+<!--        and generation tasks through natural language instructions, allowing complex editing requests to be-->
+<!--        easily accomplished through multi-turn interactions.-->
+<!--      </h2>-->
     </div>
   </div>
 </section>
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
-<section class="section hero is-light">
+<section class="section hero">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -183,24 +192,21 @@
 
 
 <!-- Image carousel -->
-<section class="hero is-small">
+<section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <div id="method-carousel" class="carousel results-carousel">
        <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/method.png" alt="MY ALT TEXT"/>
-<!--        <h2 class="subtitle has-text-centered">-->
-<!--          The illustration of ACE framework.-->
-<!--        </h2>-->
-      </div>
-      <div class="item">
         <!-- Your image here -->
         <img src="static/images/tasks.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           The overview of all generation and editing types, categorized based on different visual
           modality input conditions, can be defined with the proposed input paradigm.
         </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/method.png" alt="MY ALT TEXT"/>
       </div>
 <!--      <div class="item">-->
 <!--        &lt;!&ndash; Your image here &ndash;&gt;-->
@@ -217,19 +223,19 @@
 
 
 <!-- Video carousel -->
-<section class="hero is-small is-light">
+<section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Application 1: ChatBot</h2>
+      <h2 class="title is-3" style="margin-left: 10%;">Application 1: ChatBot</h2>
 <!--      <h3 class="title is-5">-->
 <!--        we build a Chat Bot application to achieve chat-based image generation and editing. Rather than cumbersome visual agent pipeline, our chat bot support all image-->
 <!--        creation request with only one model serves as backend, hence achieves significant efficiency improvement compared with visual agent.-->
 <!--        The Chat Bot's link is: xxxx-->
 <!--      </h3>-->
-        <div class="item item-video1">
+        <div class="chatbot-video">
           <video poster="" id="chatbot_video" autoplay controls muted loop height="100%">
             <!-- Your video file here -->
-            <source src="static/videos/demo_chat_crop_v3.mp4"
+            <source src="static/videos/demo_chat_crop_v3.webm"
             type="video/mp4">
           </video>
         </div>
@@ -261,29 +267,43 @@
 
 
 <!-- Video carousel -->
-<section class="hero is-small">
+<section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Application 2: Key Frames for Movie Editing</h2>
+      <h2 class="title is-3" style="margin-left: 10%;">Application 2: Key Frames for Long Movie Production</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%">
             <!-- Your video file here -->
-            <source src="static/videos/demo_application_3.mp4"
+            <source src="static/videos/demo_application_3.webm"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
           <video poster="" id="video2" autoplay controls muted loop height="100%">
             <!-- Your video file here -->
-            <source src="static/videos/demo_application_2.mp4"
+            <source src="static/videos/demo_application_2.webm"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video3">
           <video poster="" id="video3" autoplay controls muted loop height="100%">\
             <!-- Your video file here -->
-            <source src="static/videos/demo_application_1.mp4"
+            <source src="static/videos/demo_application_1.webm"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video4">
+          <video poster="" id="video4" autoplay controls muted loop height="100%">\
+            <!-- Your video file here -->
+            <source src="static/videos/demo_application_4.webm"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video5">
+          <video poster="" id="video5" autoplay controls muted loop height="100%">\
+            <!-- Your video file here -->
+            <source src="static/videos/demo_application_5.webm"
             type="video/mp4">
           </video>
         </div>
@@ -296,14 +316,14 @@
 
 
 <!-- Paper poster -->
-<section class="hero is-small is-light">
+<section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title">Visualization</h2>
-
+      <h2 class="title" style="margin-left: 10%;">Visualization</h2>
+      <div class="chatbot-video">
       <iframe  src="static/pdfs/ACE-Visualization.pdf" width="100%" height="550">
           </iframe>
-
+      </div>
       </div>
     </div>
   </section>
@@ -312,7 +332,8 @@
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
+    <div class="container">
+      <div class="container" style="width: 80%">
       <h2 class="title">BibTeX</h2>
       <pre><code>
         @article{wanx_ace,
@@ -322,6 +343,7 @@
             year = {2024}
         }
       </code></pre>
+      </div>
     </div>
 </section>
 <!--End BibTex citation -->
